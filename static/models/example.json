@@ -1,0 +1,268 @@
+{
+    "info": {
+        "name": "Red de Petri",
+        "description": "Red de Petri",
+        "author": "Daniel Mantilla",
+        "version": "1.0.0",
+        "date": "2023-03-22"
+    },
+    "places": [
+        {
+            "id": "p1",
+            "name": "P1",
+            "x": 100,
+            "y": 100
+        },
+        {
+            "id": "p2",
+            "name": "P2",
+            "x": 200,
+            "y": 100
+        },
+        {
+            "id": "p3",
+            "name": "P3",
+            "x": 300,
+            "y": 100
+        },
+        {
+            "id": "p4",
+            "name": "P4",
+            "x": 400,
+            "y": 100
+        },
+        {
+            "id": "p5",
+            "name": "P5",
+            "x": 500,
+            "y": 100
+        },
+        {
+            "id": "p6",
+            "name": "P6",
+            "x": 600,
+            "y": 100
+        },
+        {
+            "id": "p7",
+            "name": "P7",
+            "x": 700,
+            "y": 100
+        },
+        {
+            "id": "p8",
+            "name": "P8",
+            "x": 800,
+            "y": 100
+        },
+        {
+            "id": "p9",
+            "name": "P9",
+            "x": 900,
+            "y": 100
+        },
+        {
+            "id": "p10",
+            "name": "P10",
+            "x": 1000,
+            "y": 100
+        },
+        {
+            "id": "p11",
+            "name": "P11",
+            "x": 1100,
+            "y": 100
+        },
+        {
+            "id": "p12",
+            "name": "P12",
+            "x": 1200,
+            "y": 100
+        }
+    ],
+    "transitions": {
+        "t1": {
+            "name": "T1",
+            "x": 200,
+            "y": 200,
+            "inputs": [
+                {
+                    "place": "p1",
+                    "weight": 1
+                }
+            ],
+            "outputs": [
+                {
+                    "place": "p2",
+                    "weight": 1
+                }
+            ]
+        },
+        "t2": {
+            "name": "T2",
+            "x": 300,
+            "y": 200,
+            "inputs": [
+                {
+                    "place": "p2",
+                    "weight": 1
+                }
+            ],
+            "outputs": [
+                {
+                    "place": "p3",
+                    "weight": 1
+                }
+            ]
+        },
+        "t3": {
+            "name": "T3",
+            "x": 400,
+            "y": 200,
+            "inputs": [
+                {
+                    "place": "p3",
+                    "weight": 1
+                }
+            ],
+            "outputs": [
+                {
+                    "place": "p4",
+                    "weight": 1
+                }
+            ]
+        },
+        "t4": {
+            "name": "T4",
+            "x": 500,
+            "y": 200,
+            "inputs": [
+                {
+                    "place": "p4",
+                    "weight": 1
+                }
+            ],
+            "outputs": [
+                {
+                    "place": "p5",
+                    "weight": 1
+                }
+            ]
+        },
+        "t5": {
+            "name": "T5",
+            "x": 600,
+            "y": 200,
+            "inputs": [
+                {
+                    "place": "p5",
+                    "weight": 1
+                }
+            ],
+            "outputs": [
+                {
+                    "place": "p6",
+                    "weight": 1
+                }
+            ]
+        },
+        "t6": {
+            "name": "T6",
+            "x": 700,
+            "y": 200,
+            "inputs": [
+                {
+                    "place": "p6",
+                    "weight": 1
+                }
+            ],
+            "outputs": [
+                {
+                    "place": "p7",
+                    "weight": 1
+                }
+            ]
+        },
+        "t7": {
+            "name": "T7",
+            "x": 800,
+            "y": 200,
+            "inputs": [
+                {
+                    "place": "p7",
+                    "weight": 1
+                }
+            ],
+            "outputs": [
+                {
+                    "place": "p8",
+                    "weight": 1
+                }
+            ]
+        }
+    },
+    "arcs": [
+        {
+            "source": "p1",
+            "target": "t1"
+        },
+        {
+            "source": "t1",
+            "target": "p2"
+        },
+        {
+            "source": "p2",
+            "target": "t2"
+        },
+        {
+            "source": "t2",
+            "target": "p3"
+        },
+        {
+            "source": "p3",
+            "target": "t3"
+        },
+        {
+            "source": "t3",
+            "target": "p4"
+        },
+        {
+            "source": "p4",
+            "target": "t4"
+        },
+        {
+            "source": "t4",
+            "target": "p5"
+        },
+        {
+            "source": "p5",
+            "target": "t5"
+        },
+        {
+            "source": "t5",
+            "target": "p6"
+        },
+        {
+            "source": "p6",
+            "target": "t6"
+        },
+        {
+            "source": "t6",
+            "target": "p7"
+        },
+        {
+            "source": "p7",
+            "target": "t7"
+        },
+        {
+            "source": "t7",
+            "target": "p8"
+        }
+    ],
+    "initialMarking": {
+        "p1": 1,
+        "p2": 3,
+        "p3": 5,
+        "p4": 7
+    }
+}
