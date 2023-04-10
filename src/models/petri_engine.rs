@@ -4,7 +4,7 @@ struct PetriEngine {
     places: Vec<Node>,
     transitions: Vec<Node>,
     arcs: Vec<Arc>,
-    markings: Vec<i32>,
+    initial_marking: HashMap<String, u32>,
 }
 
 impl PetriEngine {
