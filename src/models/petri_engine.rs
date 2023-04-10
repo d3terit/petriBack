@@ -1,6 +1,10 @@
+use crate::models::{node::Node, arc::Arc};
+
 struct PetriEngine {
-    lugares: Vec<i32>,
-    transiciones: Vec<Vec<i32>>,
+    places: Vec<Node>,
+    transitions: Vec<Node>,
+    arcs: Vec<Arc>,
+    markings: Vec<i32>,
 }
 
 impl PetriEngine {
