@@ -8,6 +8,7 @@ edition = "2021"
 [dependencies]
 rocket = { version = "0.5.0-rc.1", features = ["json"] }
 rocket_cors = "0.5.2"
+serde = "1.0.160"
 
 [dev-dependencies]
 rand = "0.8.4"
